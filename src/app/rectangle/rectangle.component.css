@@ -1,0 +1,17 @@
+.parent{
+    
+    width:80%;
+    height:700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: aquamarine;
+    left:20%;
+
+}
+.child{
+    background-color: aliceblue;
+    width: 400px;
+    height: 400px;
+}

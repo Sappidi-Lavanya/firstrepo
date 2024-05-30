@@ -1,0 +1,16 @@
+.parent{
+    background-color: rgb(176, 113, 236);
+    width:80%;
+    height:700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+    left:20%;
+}
+.child{
+    background-color: aliceblue;
+    width: 400px;
+    height: 400px;
+}

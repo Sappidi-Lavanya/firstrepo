@@ -1,0 +1,25 @@
+.parent{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.child{
+    width:300px;
+    height:auto;
+    background-color:yellow ;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    left:50%;
+}
+
+input{
+    margin-bottom:10px;
+}
+button{
+    margin-right: 10px;
+}

@@ -1,0 +1,30 @@
+<div class="parent">
+    <div class="child" >
+<!-- interpolation -->
+<h3>my age is {{age}}</h3>
+<h3>my name is {{name}}</h3>
+<h3>Is Indian {{isValid}}</h3>
+
+<!-- <property data binding -->
+    <!-- Property Binding -->
+<button [disabled]="isValid">Submit</button>
+
+<!-- Event Binding -->
+<button (click)="upload()">Upload</button>
+
+<button (dblclick)="send()">Send</button>
+
+<input type="text" (keyup)="change()" >
+
+
+
+
+<!-- Two way data binding -->
+<input type="text" [(ngModel)]="phone">
+<p>{{phone}}</p>
+</div></div>
+
+
+
+
+
