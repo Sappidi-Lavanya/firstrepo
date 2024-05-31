@@ -1,0 +1,51 @@
+<p>directives works!</p>
+<h2 *ngIf="true">welcome dirctives!1!</h2>
+<h2 *ngIf="false">welcome dirctives!1!</h2>
+
+<h1 *ngFor="let age of ages">My age is{{age}}</h1>
+<h1 *ngFor="let state of states; let i=index">  my  state {{i+1}} is{{state}}</h1>
+<ol type="I">
+    <li *ngFor="let state of states"> {{state}} </li>
+</ol>
+
+<select name="" id="">
+    <option  *ngFor="let state of states">{{state}}</option></select>
+
+
+<p *ngFor="let product of products">
+    the {{product.name}} price is{{product.price}} and rating {{product.rating}}.</p>
+
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.name}}</td>
+            <td [ngClass]="{'red':product.price<100,'blue':product.price>=2000&& product.price>=110,'green': product.price>4000}">{{product.price}}</td>
+            <td [ngStyle]="{'color': product.rating>3?'green':'red'}">{{product.rating}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<table border="3">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>company</th>
+            <th>exp</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employe of employees">
+            <td>{{employe.name}}</td>
+            <td>{{employe.company}}</td>
+            <td>{{employe.exp}}</td>
+        </tr>
+    </tbody>
+</table>

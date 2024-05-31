@@ -1,14 +1,29 @@
-<!-- <p>operations works!</p>
+
 <div class="parent">
     <div class="b1">
         <form>
             <h1>Digit Sum</h1>
-            <label for="number">Number</label>
-            <input  type="number" [{ngModel}]="num1"><br><br>
-            <button [disabled]="!num1" (click)="digitsum()">check</button>
+            <label for="num">Number</label>
+            <input  type="number" [(ngModel)]="num"><br><br>
+            <button  (click)="sumDigit()">check</button>
             <h1>result is here :<mark>{{result}}</mark></h1>
-        
+       
             
         </form>
     </div>
-</div> -->
+    <div class="b2">
+        <form>
+            <h1>Even Check</h1>
+            <label for="num1">Number</label>
+            <input type="number" [(ngModel)]="num1"><br><br>
+            <button (click)="evenCheck()">Check</button>
+            <h1>result is here :<mark>{{result1}}</mark></h1>
+       
+        </form> 
+
+        
+          
+    
+</div>  
+
+  
