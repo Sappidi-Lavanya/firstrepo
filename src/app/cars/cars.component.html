@@ -1,0 +1,15 @@
+<div class="parent">
+  <h1>cars</h1>
+  <select [(ngModel)]="companies">
+    <option >Companies</option>
+    <option >bmw</option>
+    <option >lamborghini</option>
+    <option >audi</option>
+  </select>
+</div>
+<div class="img">
+<img *ngIf="companies=='audi'" src="\assets\audi.jpeg" alt="" width="100%" height="500px">
+<img *ngIf="companies=='bmw'" src="\assets\pexels-sanaan-3923522.jpg" alt= "" width="100%" height="500px">
+<img *ngIf="companies=='lamborghini'" src="\assets\lamb.jpg" alt= ""  width="100%" height="500px">
+</div>
+

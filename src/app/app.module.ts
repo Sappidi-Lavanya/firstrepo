@@ -16,6 +16,20 @@ import { BmiComponent } from './bmi/bmi.component';
 import { FormsModule } from '@angular/forms';
 import { OperationsComponent } from './operations/operations.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { StudentsComponent } from './students/students.component';
+import { CarsComponent } from './cars/cars.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { BalancePipe } from './balance.pipe';
+import { SmartshopingComponent } from './smartshoping/smartshoping.component';
+import { ProductsComponent } from './products/products.component';
+import { DiceComponent } from './dice/dice.component';
+import { VechicleComponent } from './vechicle/vechicle.component';
+import{HttpClientModule} from '@angular/common/http';
+import { BankComponent } from './bank/bank.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { EmailComponent } from './email/email.component';
+import { PhotoComponent } from './photo/photo.component'
 
 @NgModule({
   declarations: [
@@ -31,12 +45,26 @@ import { DirectivesComponent } from './directives/directives.component';
     CircleComponent,
     BmiComponent,
     OperationsComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    RegistrationComponent,
+    StudentsComponent,
+    CarsComponent,
+    PipesComponent,
+    BalancePipe,
+    SmartshopingComponent,
+    ProductsComponent,
+    DiceComponent,
+    VechicleComponent,
+    BankComponent,
+    FlipkartComponent,
+    EmailComponent,
+    PhotoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

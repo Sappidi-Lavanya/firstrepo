@@ -1,0 +1,58 @@
+<label for="">Serch</label>
+<input type="text" [(ngModel)]="term" (keyup)="filter()">
+<label for="">page:</label>
+<select type="number" [(ngModel)]="page" (change)="pagination()">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select><br>
+
+<label for="">colum:</label>
+<select type="text" [(ngModel)]="colum">
+    <option>account_name</option>
+    <option>available_balance</option>
+    <option>account_number</option>
+    <option>city</option>
+    <option>profie_picture</option>
+    <option>id</option>
+    
+</select><br>
+<label for="">order:</label>
+<select type="text" [(ngModel)]="order">
+    <option value="asc">assending</option>
+    <option value="desc">desecnding</option>
+</select><br>
+<button (click)="sort()">sort</button>
+<table class="table table-dark">
+
+   
+   <thead>
+        <tr>
+            <th>account_name</th>
+            <th>available_balance</th>
+            <th>account_number</th>
+            <th>city</th>
+            <th>profie_picture</th>
+            <th>id</th>
+            <th>actions</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor=" let account of accounts, let i=index">
+            <td>{{account.account_name}}</td><br>
+            <td>{{account.available_balance}}</td><br>
+            <td>{{account.account_number}}</td><br>
+            <td>{{account.city}}</td><br>
+            <td>
+                <img src="{{account.profie_picture}}" alt="" >
+                </td>
+            <td>{{account.id}}</td>
+            <td><button (click)="delete(account.id)">delete</button></td>
+      
+        </tr>
+        
+    </tbody>
+</table>

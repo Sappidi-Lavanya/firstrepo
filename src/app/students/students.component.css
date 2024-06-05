@@ -1,0 +1,12 @@
+.child{
+    height: 450px;
+    width: 400px;
+    background-color: rgb(142, 241, 218);
+    position: relative;
+    left: 30%;
+    text-align: center;
+}
+.a{
+    position: relative;
+    left:25%;
+}

@@ -1,0 +1,21 @@
+<div class="parent">
+    <button (click)="roll()">ROLL</button>
+    <select>
+        <option>dice</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+    </select>
+    <img *ngIf="number === 1" src="assets/d1.png">
+    <img *ngIf="number === 2" src="assets/d2.jpeg">
+    <img *ngIf="number === 3" src="assets/d3.png">
+    <img *ngIf="number === 4" src="assets/d4.png">
+    <img *ngIf="number === 5" src="assets/d5.jpeg">
+    <img *ngIf="number === 6" src="assets/d6.jpeg">
+    
+    <button (click)="press()">press</button>
+    <h1>{{p}}</h1>
+</div>

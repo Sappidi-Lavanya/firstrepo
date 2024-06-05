@@ -1,0 +1,9 @@
+<div class="parent">
+    <div class="child">
+        <div *ngFor="let mail of mails,let i=index" >
+              <h4 [ngStyle]="{'color':mail.completed===false?'black':'gray'}">{{mail.id}} &nbsp;{{mail.title}} </h4><br>
+         </div>
+    </div>
+
+</div>
+<!-- [ngStyle]="{'color': product.rating>3?'green':'red'}" -->

@@ -16,6 +16,14 @@
     overflow: auto;
     
 }
+.right{
+    position: absolute;
+    left:20%;
+    width:80%;
+    height: auto;
+    background-color: rgb(208, 223, 223);
+
+}
 button{
     width: 100%;
     height:40px;

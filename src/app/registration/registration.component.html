@@ -1,0 +1,22 @@
+<div class="parent">
+    <div class="child">
+        <h1>Event registration</h1>
+        <label for="name">Name</label>
+        <input type="text" [(ngModel)]="name">
+        <button class="b1" (click)="register()">Register</button><br>
+        <h1>Registered users</h1>
+        <div>
+            <h3 *ngFor="let name of names; let i=index">
+                {{i+1}} {{name}} 
+                <button (click)="delete(i)">delete</button>
+            </h3>
+
+        </div>
+        <button class="delete" *ngIf="names.length" (click)="deletelast()">delete</button>
+        <button (click)="deleteAll()">Delete all</button> 
+        <button (click)="increseaz()">ORDER_A</button>  
+        <button (click)="decreseaz()">ORDER_Z</button> 
+        <button (click)="salutation()">miss/miss</button> 
+
+    </div>
+</div>

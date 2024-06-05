@@ -1,0 +1,80 @@
+.parent {
+    position: relative;
+    left: 0;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    text-align: left;
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.right {
+    font-size: 15px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.r1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.a {
+    width: 200px;
+    height: 350px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.a img {
+    max-width: 100%;
+    height: auto;
+}
+
+.a h6 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.a p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.a b {
+    color: #000;
+    font-size: 18px;
+}
+
+.a del {
+    color: #999;
+    margin-left: 5px;
+}
+
+.a i {
+    color: #ff0000;
+    margin-left: 5px;
+}

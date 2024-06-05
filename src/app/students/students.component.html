@@ -1,0 +1,74 @@
+<!-- <div class="parent">
+    <div class="child">
+        <h1>UNIVERSITY ACDAMIC  BATCH-2024</h1>
+        <label>Name</label>
+        <input type="text" [(ngModel)]="name"><br>
+        <label>Marks</label>
+        <input type="number" [(ngModel)]="marks"><br>
+        <label>Fee</label>
+        <input type="number" [(ngModel)]="fee"><br>
+        <button (click)="save()">save</button><br>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Names</th>
+            <th>Marks</th>
+            <th>Fee</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.name}}</td>
+            <td>{{student.marks}}</td>
+            <td>{{student.fee}}</td>
+        </tr>
+    </tbody>
+</table>
+
+    </div>
+</div>
+ -->
+
+ <div class="parent">
+    <div class="child">
+        <h1>Student details</h1>
+        <label for="">Name:</label>
+        <input type="text"[(ngModel)]="names">
+        <br>
+        <br>
+        <label for="">Marks:</label>
+        <input type="number" [(ngModel)]="marks">
+        <br>
+        <br>
+        <label for="">Fee:</label>
+        <input type="number" [(ngModel)]="fee">
+        <br>
+        <br>
+        <button (click)="register()">Register</button>
+        <br>
+        <br>
+        <br>
+        <h1>All Students</h1>
+        <div class="a">
+<table border="2">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+            <th>Fee</th>
+            <th>Activity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students; let i=index ">
+            <td>{{student.name}}</td>
+            <td>{{student.marks}}</td>
+            <td>{{student.fee|balance}}</td>
+            <button (click)="delete(i)">delete</button>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>

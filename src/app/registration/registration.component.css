@@ -1,0 +1,30 @@
+.parent{
+    position: relative;
+
+}
+.child{
+    background-color: chartreuse;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px yellow;
+    position: absolute;
+    top:200px;
+    left:600px;
+    width: 600px;
+    height: 400px;
+    font-weight: bolder;
+}
+button{
+     color: red;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px red;
+}
+.b1{
+    color: black;
+    background-color: aliceblue;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px white;
+}
+
+

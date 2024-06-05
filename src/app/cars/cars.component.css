@@ -1,0 +1,12 @@
+.parent{
+    position:relative; 
+   left:40%;
+   
+}
+.img{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left:30%;
+  
+}

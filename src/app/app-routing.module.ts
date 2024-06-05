@@ -12,6 +12,17 @@ import { CircleComponent } from './circle/circle.component';
 import { BmiComponent } from './bmi/bmi.component';
 import { OperationsComponent } from './operations/operations.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { StudentsComponent } from './students/students.component';
+import { CarsComponent } from './cars/cars.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { SmartshopingComponent } from './smartshoping/smartshoping.component';
+import { DiceComponent } from './dice/dice.component';
+import { VechicleComponent } from './vechicle/vechicle.component';
+import { BankComponent } from './bank/bank.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { EmailComponent } from './email/email.component';
+import { PhotoComponent } from './photo/photo.component';
 
 const routes: Routes = [
     {path:'login',component:LoginComponent},
@@ -24,7 +35,18 @@ const routes: Routes = [
         {path:'circle',component:CircleComponent},
         {path:'bmi',component:BmiComponent},
         {path:'operations',component:OperationsComponent},
-        {path:'directives',component:DirectivesComponent}
+        {path:'directives',component:DirectivesComponent},
+        {path:'registration',component:RegistrationComponent},
+        {path:'students',component:StudentsComponent},
+        {path:'cars',component:CarsComponent},
+        {path:'pipes',component:PipesComponent},
+        {path:'smartshoping',component:SmartshopingComponent},
+        {path:'dice',component:DiceComponent},
+        {path:"vehicle",component:VechicleComponent},
+        {path:"bank",component:BankComponent},
+        {path:"flipkart",component:FlipkartComponent},
+        {path:"email",component:EmailComponent},
+        {path:"photo",component:PhotoComponent}
 
     ]},
     {path:'',component:LoginComponent},
