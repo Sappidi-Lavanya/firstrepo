@@ -13,7 +13,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BmiComponent } from './bmi/bmi.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OperationsComponent } from './operations/operations.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { RegistrationComponent } from './registration/registration.component';
@@ -29,7 +29,9 @@ import{HttpClientModule} from '@angular/common/http';
 import { BankComponent } from './bank/bank.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { EmailComponent } from './email/email.component';
-import { PhotoComponent } from './photo/photo.component'
+import { PhotoComponent } from './photo/photo.component';
+import { CreateVechicleComponent } from './create-vechicle/create-vechicle.component';
+import { CreateAccountsComponent } from './create-accounts/create-accounts.component'
 
 @NgModule({
   declarations: [
@@ -58,13 +60,16 @@ import { PhotoComponent } from './photo/photo.component'
     BankComponent,
     FlipkartComponent,
     EmailComponent,
-    PhotoComponent
+    PhotoComponent,
+    CreateVechicleComponent,
+    CreateAccountsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

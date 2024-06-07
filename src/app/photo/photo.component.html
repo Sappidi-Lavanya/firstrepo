@@ -1,4 +1,12 @@
-
+<div class="parent">
+    <div class="child">
+      <div *ngFor="let photo of photos; let i = index">
+        <h4>{{photo.name}}</h4>
+        <img [src]="photo.url" [width]="photo.width" [height]="photo.height">
+      </div>
+    </div>
+  </div>
+  
 
     
     

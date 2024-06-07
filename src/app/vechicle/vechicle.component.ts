@@ -52,7 +52,8 @@ export class VechicleComponent implements OnInit {
   delete(id:string){
     this._vehicleService.deleteVechicles(id).subscribe(
       (data:any)=>{
-       alert("delete")
+       alert("delete");
+       location.reload();
       },
       (err:any)=>{
         alert("Internal error");

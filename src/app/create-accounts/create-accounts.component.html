@@ -1,0 +1,24 @@
+<p>create-accounts works!</p>
+
+<form [formGroup]="accountsForm">
+
+    <label for="">Accountname:</label>
+    <input type="text" formControlName="account_name">
+    <br>
+    <label for="">Avaialable_balance</label>
+    <input type="text" formControlName="avaialable_balance">
+    <br>
+    <label for="">Account Number</label>
+    <input type="text" formControlName="account_number">
+    <br>
+    <label for="">City</label>
+    <input type="text" formControlName="city">
+    <br>
+    <label for="">Profie_picture</label>
+    <input type="text" formControlName="profie_picture">
+    <br>
+    <label for="">id</label>
+    <input type="text" formControlName="id">
+    <br>
+    <button (click)="create()">create</button>
+</form>

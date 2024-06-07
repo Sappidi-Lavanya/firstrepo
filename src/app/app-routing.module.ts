@@ -23,10 +23,13 @@ import { BankComponent } from './bank/bank.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { EmailComponent } from './email/email.component';
 import { PhotoComponent } from './photo/photo.component';
+import { CreateVechicleComponent } from './create-vechicle/create-vechicle.component';
+import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
+import { AuthenthificationGuard } from './authenthification.guard';
 
 const routes: Routes = [
     {path:'login',component:LoginComponent},
-    {path:'dashboard',component:DashboardComponent, children:[
+    {path:'dashboard',canActivate:[AuthenthificationGuard],component:DashboardComponent, children:[
         {path:'welcome',component:WelcomeComponent},
         {path:'home',component:HomeComponent},
         {path:'data-binding',component:DataBindingComponent},
@@ -46,7 +49,9 @@ const routes: Routes = [
         {path:"bank",component:BankComponent},
         {path:"flipkart",component:FlipkartComponent},
         {path:"email",component:EmailComponent},
-        {path:"photo",component:PhotoComponent}
+        {path:"photo",component:PhotoComponent},
+        {path:"createvechicle",component:CreateVechicleComponent},
+        {path:"createaccounts",component:CreateAccountsComponent}
 
     ]},
     {path:'',component:LoginComponent},

@@ -54,7 +54,8 @@ _bankService.getBank().subscribe(
   delete(id:string){
     this._bankService.deleteBank(id).subscribe(
       (data:any)=>{
-       alert("delete")
+       alert("delete");
+       location.reload();
       },
       (err:any)=>{
         alert("Internal error");
