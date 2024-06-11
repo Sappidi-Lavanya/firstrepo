@@ -62,7 +62,9 @@
             </td>
             <td>{{vechicle.cost}}</td>
             <td>{{vechicle.id}}</td>
-            <td><button (click)="delete(vechicle.id)">delete</button></td>
+            <td><button class=" btn btn-success" (click)="view(vechicle.id)">view</button>
+                <button class=" btn btn-warning" (click)="edit(vechicle.id)">edit</button>
+                <button class=" btn btn-danger" (click)="delete(vechicle.id)">delete</button></td>
         </tr>
     </tbody>
 </table>

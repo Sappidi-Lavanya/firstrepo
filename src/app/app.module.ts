@@ -31,7 +31,12 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { EmailComponent } from './email/email.component';
 import { PhotoComponent } from './photo/photo.component';
 import { CreateVechicleComponent } from './create-vechicle/create-vechicle.component';
-import { CreateAccountsComponent } from './create-accounts/create-accounts.component'
+import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { VechicleDetailsComponent } from './vechicle-details/vechicle-details.component';
+import { BankDetialsComponent } from './bank-detials/bank-detials.component'
 
 @NgModule({
   declarations: [
@@ -62,7 +67,12 @@ import { CreateAccountsComponent } from './create-accounts/create-accounts.compo
     EmailComponent,
     PhotoComponent,
     CreateVechicleComponent,
-    CreateAccountsComponent
+    CreateAccountsComponent,
+    CreateUserComponent,
+    EmployeeComponent,
+    CreateEmployeeComponent,
+    VechicleDetailsComponent,
+    BankDetialsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,65 @@
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name">
+    <div *ngIf="employeeForm.get('name')?.invalid && employeeForm.get('name')?.touched">
+      <small *ngIf="employeeForm.get('name')?.errors?.['required']">Name is required.</small>
+      <small *ngIf="employeeForm.get('name')?.errors?.['minlength']">Name must be at least 3 characters long.</small>
+      <small *ngIf="employeeForm.get('name')?.errors?.['maxlength']">Name cannot exceed 10 characters.</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="phone">Phone:</label>
+    <input id="phone" formControlName="phone">
+    <div *ngIf="employeeForm.get('phone')?.invalid && employeeForm.get('phone')?.touched">
+      <small *ngIf="employeeForm.get('phone')?.errors?.['required']">Phone is required.</small>
+      <small *ngIf="employeeForm.get('phone')?.errors?.['minlength']">Phone must be 10 digits long.</small>
+      <small *ngIf="employeeForm.get('phone')?.errors?.['maxlength']">Phone must be 10 digits long.</small>
+    </div>
+  </div>
+
+  <div formGroupName="experience">
+    <div>
+      <label for="company">Company:</label>
+      <input id="company" formControlName="company">
+    </div>
+    <div>
+      <label for="experience">Experience (years):</label>
+      <input id="experience" formControlName="experience" type="number">
+      <div *ngIf="experienceForm.get('experience')?.invalid && experienceForm.get('experience')?.touched">
+        <small *ngIf="experienceForm.get('experience')?.errors?.['min']">Experience cannot be negative.</small>
+      </div>
+    </div>
+    <div>
+      <label for="package">Package:</label>
+      <input id="package" formControlName="package" type="number">
+      <div *ngIf="experienceForm.get('package')?.invalid && experienceForm.get('package')?.touched">
+        <small *ngIf="experienceForm.get('package')?.errors?.['min']">Package cannot be negative.</small>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <label for="type">Type: </label>
+    <input type="radio" id="internal" name="type" formControlName="type" value="internal">
+    <label for="internal">Internal</label>
+    <input type="radio" id="external" name="type" formControlName="type" value="external">
+    <label for="external">External</label>
+  </div>
+
+  <div *ngIf="employeeForm.get('type')?.value === 'internal'">
+    <label for="projectManager">Project Manager:</label>
+    <input id="projectManager" type="text" formControlName="projectManager">
+  </div>
+
+  <div *ngIf="employeeForm.get('type')?.value === 'external'">
+    <label for="clientProject">Client Project:</label>
+    <input id="clientProject" type="text" formControlName="clientProject">
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+
+

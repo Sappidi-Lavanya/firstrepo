@@ -26,6 +26,10 @@ import { PhotoComponent } from './photo/photo.component';
 import { CreateVechicleComponent } from './create-vechicle/create-vechicle.component';
 import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
 import { AuthenthificationGuard } from './authenthification.guard';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { VechicleDetailsComponent } from './vechicle-details/vechicle-details.component';
+import { BankDetialsComponent } from './bank-detials/bank-detials.component';
 
 const routes: Routes = [
     {path:'login',component:LoginComponent},
@@ -51,7 +55,11 @@ const routes: Routes = [
         {path:"email",component:EmailComponent},
         {path:"photo",component:PhotoComponent},
         {path:"createvechicle",component:CreateVechicleComponent},
-        {path:"createaccounts",component:CreateAccountsComponent}
+        {path:"createaccounts",component:CreateAccountsComponent},
+        {path:"createUser",component:CreateUserComponent},
+        {path:"createEmployee",component:CreateEmployeeComponent},
+        {path:"vechicleDetails/:id",component:VechicleDetailsComponent},
+        {path:"bankDetails/:id",component:BankDetialsComponent}
 
     ]},
     {path:'',component:LoginComponent},

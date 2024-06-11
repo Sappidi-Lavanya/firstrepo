@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BankService } from '../bank.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bank',
@@ -8,7 +9,7 @@ import { BankService } from '../bank.service';
 })
 export class BankComponent implements OnInit {
 
-  constructor( private _bankService:BankService) { 
+  constructor( private _bankService:BankService,private _router:Router) { 
 _bankService.getBank().subscribe(
   (data:any)=> {
     this.accounts= data;
@@ -62,6 +63,13 @@ _bankService.getBank().subscribe(
       }
 
     )
+  }
+  view(id:string){
+    this._router.navigateByUrl('/dashboard/bankDetails/'+id);
+
+  }
+  edit(id:string){
+
   }
 
   public accounts: any=[];
