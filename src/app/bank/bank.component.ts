@@ -69,7 +69,7 @@ _bankService.getBank().subscribe(
 
   }
   edit(id:string){
-
+    this._router.navigateByUrl('/dashboard/editAccount/'+id);
   }
 
   public accounts: any=[];

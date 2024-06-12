@@ -36,7 +36,9 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { VechicleDetailsComponent } from './vechicle-details/vechicle-details.component';
-import { BankDetialsComponent } from './bank-detials/bank-detials.component'
+import { BankDetialsComponent } from './bank-detials/bank-detials.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component'
 
 @NgModule({
   declarations: [
@@ -72,7 +74,9 @@ import { BankDetialsComponent } from './bank-detials/bank-detials.component'
     EmployeeComponent,
     CreateEmployeeComponent,
     VechicleDetailsComponent,
-    BankDetialsComponent
+    BankDetialsComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

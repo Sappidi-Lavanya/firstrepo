@@ -30,6 +30,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { VechicleDetailsComponent } from './vechicle-details/vechicle-details.component';
 import { BankDetialsComponent } from './bank-detials/bank-detials.component';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
     {path:'login',component:LoginComponent},
@@ -59,7 +60,10 @@ const routes: Routes = [
         {path:"createUser",component:CreateUserComponent},
         {path:"createEmployee",component:CreateEmployeeComponent},
         {path:"vechicleDetails/:id",component:VechicleDetailsComponent},
-        {path:"bankDetails/:id",component:BankDetialsComponent}
+        {path:"bankDetails/:id",component:BankDetialsComponent},
+      {path:"editVehicle/:id",component:CreateVechicleComponent},
+      {path:"editAccount/:id",component:CreateAccountsComponent},
+      {path:"parent",component:ParentComponent}
 
     ]},
     {path:'',component:LoginComponent},

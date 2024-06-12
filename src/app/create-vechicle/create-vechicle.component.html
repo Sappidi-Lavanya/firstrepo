@@ -1,7 +1,9 @@
-<h3>create-vechicle </h3>
+<h3 *ngIf="!id">create-vechicle </h3>
+<h3 *ngIf="id">Edit-vechicle </h3>
+
 <form [formGroup]="vechileForm">
 <label for="">Vechicle</label>
-<input type="text" formControlName="Vechicle">
+<input type="text" formControlName="Vehicle">
 <br>
 <label for="">Manufacturer</label>
 <input type="text" formControlName="manufacturer">
@@ -24,4 +26,4 @@
 <label for="">Cost</label>
 <input type="text" formControlName="cost">
 <br>
-<button class="btn btn-success" (click)="create()">Create</button></form>
+<button class="btn btn-success" (click)="create()"> {{id ?'edit':'create'}}</button></form>

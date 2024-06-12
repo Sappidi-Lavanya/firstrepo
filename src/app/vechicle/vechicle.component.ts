@@ -68,6 +68,7 @@ export class VechicleComponent implements OnInit {
 
   }
   edit(id:string){
+    this._router.navigateByUrl('/dashboard/editVehicle/'+id);
 
   }
   public vehicles: any = [];

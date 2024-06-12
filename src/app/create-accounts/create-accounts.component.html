@@ -1,4 +1,5 @@
-<p>create-accounts works!</p>
+<p *ngIf="!id">edit-accounts works!</p>
+<p *ngIf="id">create-accounts works!</p>
 
 <form [formGroup]="accountsForm">
 
@@ -20,5 +21,5 @@
     <label for="">id</label>
     <input type="text" formControlName="id">
     <br>
-    <button (click)="create()">create</button>
+    <button class="btn btn-success" (click)="create()"> {{id ?'edit':'create'}}</button>
 </form>

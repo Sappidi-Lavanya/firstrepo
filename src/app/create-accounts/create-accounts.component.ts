@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { BankService } from '../bank.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-create-accounts',
@@ -19,8 +20,15 @@ export class CreateAccountsComponent implements OnInit {
 
   })
 
-
-  constructor(private _bankService:BankService) { }
+  public id:string="";
+  constructor(private _bankService:BankService,private _activatedRoute:ActivatedRoute) {
+    // _activatedRoute.params.subscribe(
+    //   (data:any)=>{
+    //     this.id=data.id;
+    //     _bankService.get
+    //   }
+    // )
+   }
 
   ngOnInit(): void {
   }
