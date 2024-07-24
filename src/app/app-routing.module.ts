@@ -31,6 +31,11 @@ import { CreateEmployeeComponent } from './create-employee/create-employee.compo
 import { VechicleDetailsComponent } from './vechicle-details/vechicle-details.component';
 import { BankDetialsComponent } from './bank-detials/bank-detials.component';
 import { ParentComponent } from './parent/parent.component';
+import { ProductsComponent } from './products/products.component';
+import { CartComponent } from './cart/cart.component';
+import { NavComponent } from './nav/nav.component';
+import { TextareaComponent } from './textarea/textarea.component';
+
 
 const routes: Routes = [
     {path:'login',component:LoginComponent},
@@ -63,7 +68,15 @@ const routes: Routes = [
         {path:"bankDetails/:id",component:BankDetialsComponent},
       {path:"editVehicle/:id",component:CreateVechicleComponent},
       {path:"editAccount/:id",component:CreateAccountsComponent},
-      {path:"parent",component:ParentComponent}
+      {path:"parent",component:ParentComponent},
+      {path:'productList',component:ProductsComponent},
+      {path:'cart',component:CartComponent},
+      {path:'nav',component:NavComponent},
+      {path:'productList1',component:ProductsComponent},
+      {path:'cart1',component:CartComponent},
+      {path:'nav1',component:NavComponent},
+      {path:'text',component:TextareaComponent}
+   
 
     ]},
     {path:'',component:LoginComponent},

@@ -22,18 +22,35 @@ export class CreateAccountsComponent implements OnInit {
 
   public id:string="";
   constructor(private _bankService:BankService,private _activatedRoute:ActivatedRoute) {
-    // _activatedRoute.params.subscribe(
-    //   (data:any)=>{
-    //     this.id=data.id;
-    //     _bankService.get
-    //   }
-    // )
+    _activatedRoute.params.subscribe(
+      (data:any)=>{
+        this.id=data.id;
+        _bankService.getAccount(data.id).subscribe(
+          (data:any)=>{
+            this.accountsForm.patchValue(data);
+          }
+        )
+      }
+    )
    }
 
   ngOnInit(): void {
   }
   create(){
     console.log(this.accountsForm)
+    if(this.id){
+      this._bankService.editaccounts(this.id,this.accountsForm.value).subscribe(
+        (data:any)=>{
+          alert("created succssfully!!!!");
+        location.reload();
+      },
+      (err:any)=>{
+        alert("created failed!!!!!");
+     }
+      
+      )
+    }
+    else{
     this._bankService.createaccounts(this.accountsForm.value).subscribe(
       (data:any)=>{
         alert("created succssfully!!!!");
@@ -43,6 +60,7 @@ export class CreateAccountsComponent implements OnInit {
       alert("created failed!!!!!");
    })
   }
+  }
 }
 
 

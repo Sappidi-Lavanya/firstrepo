@@ -62,9 +62,7 @@ export class CreateVechicleComponent implements OnInit {
       },
       (err:any)=>{
         alert("internal error");
-      }
-
-    )
+      })
   }
 }
 

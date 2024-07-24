@@ -38,7 +38,14 @@ import { CreateEmployeeComponent } from './create-employee/create-employee.compo
 import { VechicleDetailsComponent } from './vechicle-details/vechicle-details.component';
 import { BankDetialsComponent } from './bank-detials/bank-detials.component';
 import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './child/child.component'
+import { ChildComponent } from './child/child.component';
+import { CartComponent } from './cart/cart.component';
+import { NavComponent } from './nav/nav.component';
+import { Products1Component } from './products1/products1.component';
+import { Nav1Component } from './nav1/nav1.component';
+import { Cart1Component } from './cart1/cart1.component';
+import { RatingComponent } from './rating/rating.component';
+import { TextareaComponent } from './textarea/textarea.component'
 
 @NgModule({
   declarations: [
@@ -76,7 +83,14 @@ import { ChildComponent } from './child/child.component'
     VechicleDetailsComponent,
     BankDetialsComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    CartComponent,
+    NavComponent,
+    Products1Component,
+    Nav1Component,
+    Cart1Component,
+    RatingComponent,
+    TextareaComponent
   ],
   imports: [
     BrowserModule,

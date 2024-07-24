@@ -7,10 +7,11 @@
     <option>3</option>
     <option>4</option>
     <option>5</option>
-</select><br>
+</select>
 
 <label for="">colum:</label>
 <select type="text" [(ngModel)]="colum">
+    <option></option>
     <option>account_name</option>
     <option>available_balance</option>
     <option>account_number</option>
@@ -23,9 +24,9 @@
 <select type="text" [(ngModel)]="order">
     <option value="asc">assending</option>
     <option value="desc">desecnding</option>
-</select><br>
+</select>
 <button (click)="sort()">sort</button>
-<table class="table table-dark">
+<table class="table table-hover table-stripped">
 
    
    <thead>
@@ -42,10 +43,10 @@
     </thead>
     <tbody>
         <tr *ngFor=" let account of accounts, let i=index">
-            <td>{{account.account_name}}</td><br>
-            <td>{{account.available_balance}}</td><br>
-            <td>{{account.account_number}}</td><br>
-            <td>{{account.city}}</td><br>
+            <td>{{account.account_name}}</td>
+            <td>{{account.available_balance}}</td>
+            <td>{{account.account_number}}</td>
+            <td>{{account.city}}</td>
             <td>
                 <img src="{{account.profie_picture}}" alt="" >
                 </td>

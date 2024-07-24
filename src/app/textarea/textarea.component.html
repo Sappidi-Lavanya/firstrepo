@@ -1,0 +1,4 @@
+<p>Textarea works!</p>
+<textarea [maxLength]="max" [(ngModel)]="text" (keyup)="updateCharacterCount()" [rows]="10" [cols]="40"></textarea>
+<p>Character count: {{ charactercount }}</p>
+
