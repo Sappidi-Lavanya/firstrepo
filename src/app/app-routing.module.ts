@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -35,6 +35,11 @@ import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
 import { NavComponent } from './nav/nav.component';
 import { TextareaComponent } from './textarea/textarea.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
+import { ToDoComponent } from './to-do/to-do.component';
+import { Child1Component } from './child1/child1.component';
+import { WeDoComponent } from './we-do/we-do.component';
+import { CalculatorrComponent } from './calculatorr/calculatorr.component';
 
 
 const routes: Routes = [
@@ -75,7 +80,17 @@ const routes: Routes = [
       {path:'productList1',component:ProductsComponent},
       {path:'cart1',component:CartComponent},
       {path:'nav1',component:NavComponent},
-      {path:'text',component:TextareaComponent}
+      {path:'text',component:TextareaComponent},
+      {path:'about-company',component:AboutCompanyComponent},
+      {path:'list',component:ToDoComponent},
+      {path:'to-do',component:ToDoComponent},
+      {path:'we-do',component:WeDoComponent},
+      {path:'calculatorr',component:CalculatorrComponent},
+      {
+        path: 'payments',
+        loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
+      },
+     
    
 
     ]},
@@ -86,7 +101,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

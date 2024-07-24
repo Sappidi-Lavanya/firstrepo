@@ -46,6 +46,19 @@ import { Nav1Component } from './nav1/nav1.component';
 import { Cart1Component } from './cart1/cart1.component';
 import { RatingComponent } from './rating/rating.component';
 import { TextareaComponent } from './textarea/textarea.component'
+import { AboutUsModule } from './about-us/about-us.module';
+import { ToDoComponent } from './to-do/to-do.component';
+import { Child1Component } from './child1/child1.component';
+import { Child2Component } from './child2/child2.component';
+import { Child3Component } from './child3/child3.component';
+import { WeDoComponent } from './we-do/we-do.component';
+import { C1Component } from './c1/c1.component';
+import { C2Component } from './c2/c2.component';
+import { C3Component } from './c3/c3.component';
+import { CalculatorrComponent } from './calculatorr/calculatorr.component';
+import { InputComponent } from './input/input.component';
+import { ResultComponent } from './result/result.component';
+import { OperatorsComponent } from './operators/operators.component';
 
 @NgModule({
   declarations: [
@@ -90,14 +103,27 @@ import { TextareaComponent } from './textarea/textarea.component'
     Nav1Component,
     Cart1Component,
     RatingComponent,
-    TextareaComponent
+    TextareaComponent,
+    ToDoComponent,
+    Child1Component,
+    Child2Component,
+    Child3Component,
+    WeDoComponent,
+    C1Component,
+    C2Component,
+    C3Component,
+    CalculatorrComponent,
+    InputComponent,
+    ResultComponent,
+    OperatorsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutUsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

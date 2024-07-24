@@ -1,0 +1,22 @@
+.child{
+    display: flex;
+    justify-content: space-evenly;
+}
+.left{
+    background-color: cadetblue;
+    height: 700px;
+    width:390px
+}
+.middle{
+    background-color: cornflowerblue;
+    height: 700px;
+    width:390px
+}
+.right{
+    background-color: darkmagenta;
+    height: 700px;
+    width:360px
+}
+.child{
+    text-align: left;
+}

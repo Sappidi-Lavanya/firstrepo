@@ -1,0 +1,8 @@
+<p></p>
+<div class="b">
+<div *ngFor="let l of lists;let i=index">
+   {{l.task}}--{{l.date}}
+   <button (click)="view(i)">view</button>
+   <button (click)="edit()">edit</button>
+   <button (click)="delete()">delete</button>
+</div></div>

@@ -1,0 +1,22 @@
+.child{
+    display: flex;
+    justify-content: space-evenly;
+}
+.left{
+    background-color: rgb(131, 112, 235);
+    height: 700px;
+    width:390px
+}
+.middle{
+    background-color: rgb(201, 87, 38);
+    height: 700px;
+    width:390px
+}
+.right{
+    background-color: hotpink;
+    height: 700px;
+    width:360px
+}
+.child{
+    text-align: left;
+}

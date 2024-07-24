@@ -10,6 +10,7 @@ export class DataBindingComponent implements OnInit {
   public age:number=20;
   public name:string='ABBCD';
   public isValid:boolean=true;
+  
   public phone:string = "+91 "
 
 

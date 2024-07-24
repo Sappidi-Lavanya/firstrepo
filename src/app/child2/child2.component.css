@@ -1,0 +1,15 @@
+.a{
+    background-color:rgb(209, 20, 114);
+    width:360px;
+    height:150px;
+    position: relative;
+    left:10px;
+    top:10px;
+}
+.b{
+    width:380px;
+    height:200px;
+    background-color: chartreuse;
+    border-radius: 20px;
+    border: 10px solid white;
+}

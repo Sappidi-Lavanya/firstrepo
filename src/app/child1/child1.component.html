@@ -1,0 +1,11 @@
+<p></p>
+<form [formGroup]="childForm">
+    <label>Task:</label>
+    <textarea formControlName="task" ></textarea>
+    <br>
+    <label>Date:</label>
+    <input  formControlName="date" type="datetime-local">
+    <br><br>
+    <button (click)="create()" class="btn btn-danger">Create</button>
+    <button class="btn btn-danger">Reset</button>
+    </form>

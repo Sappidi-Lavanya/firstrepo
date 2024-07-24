@@ -1,0 +1,14 @@
+<p></p>
+<br>
+<br>
+<div>
+    <h1>Calculator</h1>
+    <br>
+    <br>
+    <label for="num1">num1 :</label>
+    <input type="number" [(ngModel)]="num1">
+    <br><br>
+    <label for="num2">num2 :</label>
+    <input type="number" [(ngModel)]="num2">
+</div>
+<app-operators [num1]="num1" [num2]="num2" (clear)="catch($event)"></app-operators>

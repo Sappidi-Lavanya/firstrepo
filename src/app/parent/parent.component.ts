@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ParentComponent implements OnInit {
   public ap:string="";
   public bp:string="";
+  
 
   constructor() { }
 
